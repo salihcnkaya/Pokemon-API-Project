@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	width: 100%;
+	font-family: 'Roboto', sans-serif;
+
+	background-image: url(https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png);
+    background-color: rgb(66, 66, 66);
+}
+
+.header {
+	text-align: center;
+	margin: 2rem auto;
+}
+
+.header h1 {
+	font-size: 2.5rem;
+	color: white;
+	padding: 1rem 0;
+}
+
+.header form {
+	display: flex;
+	justify-content: center;
+}
+
+.header form input {
+	height: 2rem;
+	font-size: 1rem;
+	padding: 10px;
+	border: none;
+}
+
+.header form input:focus {
+	outline: none;
+}
+
+.header form button {
+	width: 2rem;
+	border: none;
+	cursor: pointer;
+}
+
+.poke-area {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 10px;
+
+	margin: 2rem 0;
+}
+
+.poke-card {
+	width: 300px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 0;
+	border-radius: 15px;
+
+	background-image: url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
+    background-color: rgb(255, 255, 255);
+}
+
+.poke-name {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.poke-img {
+	width: 80%;
+	margin: 10px 0;
+}
+
+.poke-id {
+	font-style: italic;
+	font-weight: 400;
+}
+
+.poke-weight {
+	font-weight: 400;
+	margin-top: 5px;
+}
+
+
+
+
