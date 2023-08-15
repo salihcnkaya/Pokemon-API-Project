@@ -66,7 +66,7 @@ body {
 	align-items: center;
 	padding: 1rem 0;
 	border-radius: 15px;
-
+	cursor: pointer;
 	background-image: url(https://assets.pokemon.com/static2/_ui/img/chrome/container_bg.png);
     background-color: rgb(255, 255, 255);
 }
