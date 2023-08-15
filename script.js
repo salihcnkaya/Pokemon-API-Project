@@ -26,8 +26,11 @@ function checkId(id) {
 function renderPokeCard(data) {
 	const div = document.createElement('div');
 	div.classList.add('poke-card');
+	const contentDiv = document.createElement('div');
+	contentDiv.classList.add('content');
 
-	div.innerHTML = `<h3 class="poke-name">${data.name[0].toUpperCase() + data.name.slice(1)}</h3>
+	div.appendChild(contentDiv);
+	contentDiv.innerHTML = `<h3 class="poke-name">${data.name[0].toUpperCase() + data.name.slice(1)}</h3>
 			<img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/${checkId(data.id)}.png" alt="pokemon-img" class="poke-img">
 			<p class="poke-id">#${data.id}</p>
 			<p class="poke-weight">${data.weight} kg</p>
